@@ -1,4 +1,4 @@
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: etuples
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/etuples/etuples-{{ version }}.tar.gz
-  sha256: ebd46ff6484201d6d1696f8ca95a481b0d26e485dd9bc211ba38b5cad9fcc8c2
+  sha256: 726c403fa5efbd5e47796c0a56b5a9a5e71a4e5e59cbb777f99fdd494f39d75e
   patches:
 
 build:
