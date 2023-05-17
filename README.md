@@ -1,11 +1,11 @@
-About etuples
-=============
+About etuples-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/etuples-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pythological/etuples
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/etuples-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python S-expression emulation using tuple-like objects.
 
