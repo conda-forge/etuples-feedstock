@@ -5,26 +5,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/etuples/etuples-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/etuples/etuples-{{ version }}.tar.gz
   sha256: a474e586683d8ba8d842ba29305005ceed1c08371a4b4b0e0e232527137e5ea3
   patches:
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - cons
     - multipledispatch
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - etuples
 
