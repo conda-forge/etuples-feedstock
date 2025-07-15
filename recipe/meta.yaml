@@ -30,6 +30,8 @@ test:
     - etuples
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; print(version('{{ name }}'))"
+    - python -c "from importlib.metadata import version; print(version('{{ name }}'))" | grep {{ version }}
   requires:
     - python {{ python_min }}
     - pip
